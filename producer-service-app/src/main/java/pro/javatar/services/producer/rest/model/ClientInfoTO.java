@@ -2,19 +2,19 @@ package pro.javatar.services.producer.rest.model;
 
 import java.time.Instant;
 
-public class ClientInfo {
+public class ClientInfoTO {
     private String id;
     private Instant time;
 
-    public ClientInfo() {
+    public ClientInfoTO() {
     }
 
-    public ClientInfo(String id, Instant time) {
+    public ClientInfoTO(String id, Instant time) {
         this.id = id;
         this.time = time;
     }
 
-    public ClientInfo(String id) {
+    public ClientInfoTO(String id) {
         this(id, Instant.now());
     }
 
