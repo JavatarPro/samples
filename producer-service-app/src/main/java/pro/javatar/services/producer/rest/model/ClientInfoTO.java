@@ -4,18 +4,18 @@ import java.time.Instant;
 
 public class ClientInfoTO {
     private String id;
-    private Instant time;
+    private Long time;
 
     public ClientInfoTO() {
     }
 
-    public ClientInfoTO(String id, Instant time) {
+    public ClientInfoTO(String id, Long time) {
         this.id = id;
         this.time = time;
     }
 
     public ClientInfoTO(String id) {
-        this(id, Instant.now());
+        this(id, Instant.now().toEpochMilli());
     }
 
     public String getId() {
@@ -26,11 +26,11 @@ public class ClientInfoTO {
         this.id = id;
     }
 
-    public Instant getTime() {
+    public Long getTime() {
         return time;
     }
 
-    public void setTime(Instant time) {
+    public void setTime(Long time) {
         this.time = time;
     }
 }
