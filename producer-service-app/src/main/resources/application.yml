@@ -1,6 +1,9 @@
 spring:
   application:
     name: producer-service
+  cloud:
+    config:
+      uri: http://40.114.229.6:8888
 
 server:
   port: 8081
