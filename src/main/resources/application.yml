@@ -1,0 +1,49 @@
+spring:
+  application:
+    name: µService-admin
+  security:
+    user:
+      name: admin
+      password: admin
+  boot:
+    admin:
+      notify:
+        slack:
+          enabled: true
+          webhook-url: https://hooks.slack.com/services/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
+          channel: mservivce-admin
+      client:
+        username: admin       #These two are needed so that the client
+        password: admin   #can register at the protected server api
+        instance:
+          metadata:
+            user.name: admin         #These two are needed so that the server
+            user.password: admin
+
+eureka:
+  client:
+    healthcheck:
+      enabled: true
+    register-with-eureka: true
+    fetch-registry: true
+
+management:
+  security:
+    enabled: false
+  endpoints:
+      web:
+        exposure:
+          include: "*"
+  endpoint:
+    health:
+      show-details: ALWAYS
+
+server:
+  port: 8082
+
+info:
+  app:
+    name: ${spring.application.name}
+    description: Eureka service
+    version: @project.version@
+    artifact: @project.artifactId@
