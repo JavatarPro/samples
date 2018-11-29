@@ -77,12 +77,13 @@
             <artifactId>slf4j-api</artifactId>
         </dependency>
 
+        <!-- test dependencies -->
+
         <dependency>
             <groupId>pro.javatar.commons</groupId>
             <artifactId>javatar-commons</artifactId>
+            <scope>test</scope>
         </dependency>
-
-        <!-- test dependencies -->
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
