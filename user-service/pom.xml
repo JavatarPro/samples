@@ -5,7 +5,7 @@
 
     <groupId>pro.javatar.core</groupId>
     <artifactId>user-service</artifactId>
-    <version>0.1-SNAPSHOT</version>
+    <version>0.2-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>user-service</name>
 

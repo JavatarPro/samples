@@ -14,7 +14,7 @@ public class UserPO {
     private String lastName;
     private String firstName;
     private String email;
-    private SexPO sex;
+    private boolean sex;
 
     public Long getId() {
         return id;
@@ -56,11 +56,11 @@ public class UserPO {
         this.email = email;
     }
 
-    public SexPO getSex() {
+    public boolean getSex() {
         return sex;
     }
 
-    public void setSex(SexPO sex) {
+    public void setSex(boolean sex) {
         this.sex = sex;
     }
 

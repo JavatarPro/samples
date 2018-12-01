@@ -16,7 +16,7 @@ public class UserTO {
     private String lastName;
     private String firstName;
     private String email;
-    private SexBO sex;
+    private boolean sex;
 
     public Long getId() {
         return id;
@@ -58,11 +58,11 @@ public class UserTO {
         this.email = email;
     }
 
-    public SexBO getSex() {
+    public boolean getSex() {
         return sex;
     }
 
-    public void setSex(SexBO sex) {
+    public void setSex(boolean sex) {
         this.sex = sex;
     }
 

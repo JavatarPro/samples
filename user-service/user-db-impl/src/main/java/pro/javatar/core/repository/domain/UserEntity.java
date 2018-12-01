@@ -28,8 +28,7 @@ public class UserEntity {
     private String firstName;
 
     @Column
-    @Enumerated(EnumType.STRING)
-    private Sex sex;
+    private boolean sex;
 
     public Long getId() {
         return id;
@@ -71,11 +70,11 @@ public class UserEntity {
         this.firstName = firstName;
     }
 
-    public Sex getSex() {
+    public boolean getSex() {
         return sex;
     }
 
-    public void setSex(Sex sex) {
+    public void setSex(boolean sex) {
         this.sex = sex;
     }
 
